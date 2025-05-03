@@ -1,0 +1,18 @@
+<Application xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="SwitchingViewsNavigation.App"
+			 xmlns:vm="using:SwitchingViewsNavigation.ViewModels"
+			 xmlns:v="using:SwitchingViewsNavigation.Views"
+             RequestedThemeVariant="Default">
+	<Application.Styles>
+		<FluentTheme />
+	</Application.Styles>
+	<Application.DataTemplates>
+		<DataTemplate DataType="vm:HomeViewModel">
+			<v:HomeView/>
+		</DataTemplate>
+		<DataTemplate DataType="vm:SettingViewModel">
+			<v:SettingView/>
+		</DataTemplate>
+	</Application.DataTemplates>
+</Application>
